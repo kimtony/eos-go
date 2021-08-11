@@ -361,6 +361,7 @@ type Trace struct {
 	Receiver AccountName `json:"receiver"`
 	// Action     Action       `json:"act"` // FIXME: how do we unpack that ? what's on the other side anyway?
 	Console    SafeString   `json:"console"`
+	ReturnValueData string	`json:"return_value_data"`
 	DataAccess []DataAccess `json:"data_access"`
 }
 
